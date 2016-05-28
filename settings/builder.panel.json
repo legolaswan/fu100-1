@@ -1,0 +1,13 @@
+{
+  "excludeScenes": [],
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.fu100_cc",
+  "startScene": "82874c50-a95f-4894-a307-dea3f07231f5",
+  "title": "fu100_cc",
+  "webOrientation": "auto"
+}
