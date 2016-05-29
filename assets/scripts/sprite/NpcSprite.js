@@ -16,12 +16,13 @@ var NpcSprite = cc.Class({
     move:function(){
         var moveAct = cc.sequence(cc.moveTo(2,cc.p(this.node.width/2,0),10),cc.callFunc(function(target){
             this.node.on(cc.Node.EventType.TOUCH_START,this.touchStart,this);
+            this.mainUI.playStopAudio();
         },this));
         this.node.runAction(moveAct);
     },
     //触摸事件
     touchStart:function(touch) {
-        touch.node.removeFromParent();
+        this.node.removeFromParent();
         this.mainUI.randomEvent();
     }
 });
